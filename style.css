@@ -1,0 +1,113 @@
+/* Common styles for h1 and h2 */
+h1, h2 {
+  color: rgb(82, 211, 246);
+}
+
+body {
+  text-align: center;
+  background-color: rgb(18, 27, 76);
+  font-family: 'Oswald';
+}
+
+/* Reset padding for ul elements */
+ul {
+  padding: 0;
+}
+
+/* Increase font size for social icons and add margin */
+.img-social {
+  font-size: 5vw; /* Responsive font size based on viewport width */
+  margin: 2.5vw;
+  color: aqua;
+}
+
+.img-social:hover {
+  color: rgb(150, 5, 94);
+}
+
+/* Responsive image profile */
+.img-profile {
+  width: 30%; /* Use percentages for responsiveness */
+  max-width: 200px; /* Add a maximum width to prevent oversized images */
+  border-radius: 50%;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem; /* Use relative units for responsiveness */
+  text-align: center;
+  padding: 10px;
+  margin: 2rem;
+}
+/* .removedeco {
+  display: inline; */
+}
+
+.img-social {
+  display: inline;
+  text-decoration: none;
+}
+
+.about-me {
+  position: relative;
+  align-items: center;
+  width: 60%; /* Use percentages for responsiveness */
+  max-width: 800px; /* Add a maximum width to prevent content from spreading too wide */
+  margin: 5vw auto; /* Use viewport width unit for margin */
+  border: 1px solid rgb(119, 224, 243);
+  background-color: rgb(5, 50, 89);
+  border-radius: 6px;
+  box-shadow: 1vw 1vw 1vw rgba(150, 5, 94, 0.6); /* Use viewport width unit for box-shadow */
+}
+
+.flex-box-container {
+  display: flex;
+  justify-content: center; /* Align boxes horizontally */
+  flex-wrap: wrap;
+}
+
+.flex-box {
+  flex: 1;
+  text-align: center;
+  width: 45%; /* Set the width for each box */
+  max-width: 400px; /* Set a maximum width for each box */
+  margin: 1vw;
+  border: 1px solid rgb(119, 224, 243);
+  background-color: rgb(5, 50, 89);
+  border-radius: 6px;
+  box-shadow: 1vw 1vw 1vw rgba(150, 5, 94, 0.6);
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 10px; /* Adjust the left position to position it on the left side of the picture */
+  width: 30%; /* Use percentages for responsiveness */
+  max-width: 200px; /* Add a maximum width to prevent it from taking too much space */
+  border: 1px solid rgb(119, 224, 243);
+  border-radius: 4px;
+  font-size: 0.8rem; /* Use relative units for responsiveness */
+  padding: 10px;
+  box-shadow: 1vw 1vw 1vw rgba(150, 5, 94, 0.6); /* Use viewport width unit for box-shadow */
+}
+
+.text-divabs {
+  font-size: 0.8rem; /* Use relative units for responsiveness */
+  text-align: left;
+}
+
+.flex-box h2 {
+  color: rgb(82, 211, 246); /* Set the color of the heading */
+}
+
+@media (max-width: 1024px) {
+  .flex-box {
+    width: 90%; /* Reduce width for better fit on smaller screens */
+  }
+  .absolute {
+    position: static; /* Change to static positioning to let it stack below the picture */
+    width: 90%; /* Take full width of the container */
+    max-width: none; /* Remove the maximum width restriction */
+    margin: 1rem auto; /* Use regular margin to center the element */
+  }
+}
